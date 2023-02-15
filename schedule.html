@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style6.css">
+    <title>Schedule</title>
+    
+</head>
+
+<body>
+    
+    <br><br><center><h1>Doctor schedules</h1></center>
+    <header>
+    <div class="table-box">
+        <div class="table-row table-head">
+            <div class="table-cell">
+                <p>Doctor Name</p>
+            </div>
+            <div class="table-cell">
+                <p>Type</p>
+            </div>
+            <div class="table-cell">
+                <p>Timing</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Dr. Gautam Gupta</p>
+            </div>
+            <div class="table-cell">
+                <p>Orthopedic</p>
+            </div>
+            <div class="table-cell">
+                <p>10:30AM - 11:30AM</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Dr. Nilanjan Mitra</p>
+            </div>
+            <div class="table-cell">
+                <p> Urology</p>
+            </div>
+            <div class="table-cell">
+                <p>6:00PM - 08:00PM</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Dr. Amitabha Ghosh</p>
+            </div>
+            <div class="table-cell">
+                <p>General Physician</p>
+            </div>
+            <div class="table-cell">
+                <p>9:00AM - 05:00PM</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Dr. Ganga Sharan</p>
+            </div>
+            <div class="table-cell">
+                <p>Obstetrics & Gynaecology</p>
+            </div>
+            <div class="table-cell">
+                <p>4:30PM - 06:30PM</p>
+            </div>
+        </div>
+        <div class="table-row">
+            <div class="table-cell">
+                <p>Dr. Pratik Dasgupta</p>
+            </div>
+            <div class="table-cell">
+                <p>Internal Medicine</p>
+            </div>
+            <div class="table-cell">
+                <p>10:00AM - 12:00PM</p>
+            </div>
+        </div>
+        </div>
+    </header>
+    <center><div class="optionmenu">
+        <form name="frm1" action="submit.htm" onsubmit="greeting()"> 
+        <label >Doctors</label>
+        <select name="" id="" >
+        
+            <option value="">Select One</option>
+            <option value="">Dr. Gautam Gupta</option>
+            <option value="">Dr. Nilanjan Mitra</option>
+            <option value="">Dr. Amitabha Ghosh</option>
+            <option value="">Dr. Ganga Sharan</option>
+            <option value="">Dr. Pratik Dasgupta</option>
+        </select>
+    </form>  
+    </div></center>
+    <div class="container">
+        
+        <br><br><button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <a href="services.html"><button type="submit">Back</button></a>
+        <div class="popup" id="popup">
+            <img src="tick.jpg" alt="">
+            <p>Successfully Submited</p>
+            <button type="button" onclick="closePopup()">Ok</button>
+        </div>
+    </div>
+ <script>
+    // console.log(document.getElementById("doctors").value);
+    let popup=document.getElementById("popup");
+    function openPopup(){
+        popup.classList.add("open-popup");
+    }
+    function closePopup(){
+        popup.classList.remove("open-popup");
+    }
+ </script>   
+    
+</body>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <link rel="stylesheet" href="style8.css">
+    <title>Register Page</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <center>
+        <h1>Your Details Submitted Successfully!</h1>
+        <table>
+            <tr>
+                <th style="color: blue;">Full Name</th>
+                <th style="color: blue;">Username</th>
+                <th style="color: blue;">Email</th>
+
+                <th style="color: blue;">Phone</th>
+
+
+            </tr>
+            <tr>
+
+                <td id="fullname" ></td>
+                <td id="uname" ></td>
+                <td id="email" ></td>
+                <td id="phone" ></td>
+
+            </tr>
+        </table>
+    </center>
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const fullName = urlParams.get('fullname');
+        const username = urlParams.get('uname');
+        const Email = urlParams.get('email');
+        const Phone = urlParams.get('phone');
+        document.getElementById("fullname").innerHTML=fullName;
+        document.getElementById("uname").innerHTML=username;
+        document.getElementById("email").innerHTML=Email;
+        document.getElementById("phone").innerHTML=Phone;
+
+
+    </script>
+</body>
+
+</html>

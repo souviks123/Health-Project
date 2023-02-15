@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Registration page</title>
+    <link rel="stylesheet" type="text/css" href="style5.css">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+
+</head>
+
+<!-- <body style="background-image: url(app.jfif); height: 100vh; background-size: cover;">  -->
+    
+        <div class="main">
+            <div class="logo">
+                <img src="draw.png" alt="">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        
+        
+        <form action="register.html">
+            
+            <div class="container">
+                <center>
+                    <h1> Patient Registeration Form</h1>
+                </center>
+                <hr>
+                <center><form action="register.html">
+                    <div class="user-details">
+                      <div class="input-box">
+                        <b><label class="fullname">Full Name</label></b>
+
+                        <input type="text"  name="fullname" id="fullname" placeholder="Enter your name" required>
+                      </div>
+                      <div class="input-box">
+                        <b><label for="uname">User name</label></b>
+                        
+                        <input type="text" name="uname" id="uname" placeholder="Enter your username" required>
+                      </div>
+                      <div class="input-box">
+                       <b> <label for="email">Email</label></b>
+                        <input type="text" name="email" id="email" placeholder="Enter your email" required>
+                      </div>
+                      <div class="input-box">
+                        <b><label class="phone">Phone Number</label></b>
+                        <input type="text" name="phone" id="phone" placeholder="Enter your number" required>
+                      </div>
+                      <div class="input-box">
+                        <b><level class="details">Password</level></b>
+                        <input type="text" placeholder="Enter your password" required>
+                      </div>
+                      <div class="input-box">
+                       <b> <lebel class="details">Confirm Password</level></b>
+                        <input type="text" placeholder="Confirm your password" required>
+                      </div>
+                    </div>
+                    <div class="gender-details">
+                      <input type="radio" name="gender" id="first">
+                      <input type="radio" name="gender" id="second">
+                      <input type="radio" name="gender" id="third">
+                      <b><lavel class="gender">Gender</level></b>
+                      <div class="category">
+                        <label for="first">
+                        <span class="dot one"></span>
+                        <b><span class="gender">Male</span></b>
+                      </label>
+                      <label for="second">
+                        <span class="dot two"></span>
+                        <b><span class="gender">Female</span></b> 
+                      </label>
+                      <label for="third">
+                        <span class="dot three"></span>
+                        <b><span class="gender">Prefer not to say</span></b>
+                        </label>
+                      </div>
+                    </div>
+                    <div class="button">
+                      <input type="submit" value="Register">
+                    </div>
+                    
+                  </form></center>
+                </div>
+    
+</body>
+
+</html>
